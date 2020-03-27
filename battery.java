@@ -19,7 +19,7 @@ public class battery {
 			if(array.length>1)
 			{ 
 				array[0]=array[0].trim();
-				if(array[0].equals(compare1))
+				if(array[0].equals(compare1)  )
 				{
 		         st3=array[1];
 		         String[] array1 = st3.split("\\(");
