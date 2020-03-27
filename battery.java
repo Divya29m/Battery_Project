@@ -19,26 +19,23 @@ public class battery {
 			if(array.length>1)
 			{ 
 				array[0]=array[0].trim();
-				if(array[0].equals(compare1)  )
+				if(array[0].equals(compare1))
 				{
 		         st3=array[1];
 		         String[] array1 = st3.split("\\(");
 		         Battery_drain=Float.parseFloat(array1[0]); 
-		         System.out.println(Battery_drain);
-				}
+		      		}
 				if(array[0].equals(compare2))
 				{
                  	st3=array[1];
 		         String[] array1 = st3.split("\\(r");
 		         Foreground=array1[0].trim();
-		         System.out.println(Foreground);
 				} 
 			}
 	   
 			  
 		}
 		Battery_percentage=(Battery_drain/1000);
-		System.out.println(Battery_percentage);
 		JSONObject obj=new JSONObject();
 		obj.put("Foreground_time",Foreground);
 		obj.put("Battery_drain" ,Battery_drain);
